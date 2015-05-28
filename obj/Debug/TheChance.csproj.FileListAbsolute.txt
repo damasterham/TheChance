@@ -1,0 +1,6 @@
+C:\Users\Dope\Documents\Visual Studio 2013\Projects\thechance\TheChance\bin\TheChance.dll.config
+C:\Users\Dope\Documents\Visual Studio 2013\Projects\thechance\TheChance\bin\TheChance.dll
+C:\Users\Dope\Documents\Visual Studio 2013\Projects\thechance\TheChance\bin\TheChance.pdb
+C:\Users\Dope\Documents\Visual Studio 2013\Projects\thechance\TheChance\obj\Debug\TheChance.csprojResolveAssemblyReference.cache
+C:\Users\Dope\Documents\Visual Studio 2013\Projects\thechance\TheChance\obj\Debug\TheChance.dll
+C:\Users\Dope\Documents\Visual Studio 2013\Projects\thechance\TheChance\obj\Debug\TheChance.pdb
