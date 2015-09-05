@@ -71,6 +71,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Icon.png" />
+    <Content Include="Media\Art\Engineer.png" />
+    <Content Include="Media\Art\Little Girl.png" />
+    <Content Include="Media\Art\ShockAndAwe.png" />
+    <Content Include="Media\Assets\favicon.ico" />
+    <Content Include="Media\Assets\Favicon.png" />
     <Content Include="Media\Assets\Li.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

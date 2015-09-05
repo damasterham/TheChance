@@ -1,17 +1,86 @@
-﻿body
+﻿@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:500,700,600,400);
+html
 {
+    font-size:14px;
+
+   // background:rgb(20,20,20);
+}
+body
+{
+    background:rgb(20,20,20);
 }
 a
 {
     outline:0 !important;
 }
+.navigationPanel
+{
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+}
+/* HEADER___________________________________*/
+.placementHeader
+{
+    width:300px;
+    height:60px;
+    position:absolute;
+    top:75px;
+    z-index:501;
+
+    background:rgba(6, 187, 154, 1);
+}
+.placementHeader p
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight:700;
+    letter-spacing: 8px;
+    margin:10px 0;
+    margin-left:150px;
+    font-size:2em;
+    color:#fff;
+}
+.placementEdge
+{
+    width: 0; 
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 30px solid rgba(6, 187, 154, 1); 
+    border-bottom: 30px solid transparent; 
+    /*background:rgba(6, 187, 154, 1);*/
+    position:absolute;
+    z-index:500;
+    right:-30px;
+    top:0px;
+
+  
+}
+.placementIcon  
+{
+    width:100px;
+    height:100px;
+    position:absolute;
+    background:rgba(129, 43, 225, 1);
+    position:absolute;
+    top:-20px;
+    left:-12px;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+
+    -ms-transform: rotate(135deg); /* IE 9 */
+    -webkit-transform: rotate(135deg); /* Safari */
+    transform: rotate(135deg);
+
+}
+/* HEADER///////////////////////////////////*/
+
 
 /* NAVIGATION______________________________ */
-
 .navigation
 {
-    position: fixed;
-    top: 25%;
+    position: absolute;
+    top: 300px;
     
     left: 0px;
     z-index: 1000;
@@ -19,14 +88,18 @@ a
     /*padding: 20px;*/
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: rgba(0,0,0,0.5);
+    font-family: 'Quicksand', sans-serif;
+    font-size:1.2em;
+
+    /*background-color: rgba(0,0,0,0.5);*/
+
 }
 .navigation ul
 {
     display:inline-block;
     list-style:none;
     min-width:50px;
-    max-width:200px;
+    max-width:175px;
     padding:0;
     margin:0;
     /*list-style: inside url("../Media/Assets/Li.png");*/
@@ -36,11 +109,11 @@ a
 {
     display:inline-block;
     width:100%;
-    height:30px;
+    height:29px;
     margin-bottom:5px;
     position:relative;
 
-    border:dashed rgba(54, 193, 33, 0.48);
+    /*border:dashed rgba(54, 193, 33, 0.48);*/
 }
 .navigation ul li a
 {
@@ -49,15 +122,16 @@ a
     max-width:500px;
     height:100%;
     display:block;
-
-    background:rgba(71, 255, 249, 0.53);
-
+    padding-left:30px;
+    
+    /*background:rgba(71, 255, 249, 0.53);*/
 }
 .navigation ul li p
 {
     position:absolute;
-    left:15px;
-    top:5px;
+
+    left:50px;
+    top:2px;
 
     /*height:100%;*/
     padding:0 5px;
@@ -67,26 +141,27 @@ a
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
 
-    background:rgba(207, 116, 116, 0.50);
+    /*background:rgba(207, 116, 116, 0.50);*/
 }
 .navigation ul li a:hover p
 {
-    left:20px;
+    left:70px;
     -moz-transition: all ease  0.5s;
     -ms-transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     font-size: 1.2em;
-    top:2.5px;
+    top:0px;
 }
 .navigation ul li div
 {
-    width:10px;
-    height:10px;
+    width:15px;
+    height:15px;
     background:#444;
     display:block;
     position:absolute;
-    top:33%;
+    top:6px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 
     -ms-transform: rotate(135deg); /* IE 9 */
     -webkit-transform: rotate(135deg); /* Safari */
@@ -105,9 +180,12 @@ a
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Safari */
+    border: 2px solid rgba(255, 255, 255, 0.75);
+
     transform: rotate(0deg);
-    width: 15px;
-    height: 15px;
+    top:4px;
+    width: 20px;
+    height: 20px;
 }
 
 .navigationActive
@@ -124,6 +202,100 @@ a
 
 /* NAVIGATION///////////////////////////// */
 
+/* BODY________________________________________*/
+.contentFrame
+{
+    //width:100%;
+    padding: 0px 25px;
+}
 
-.a{width:200px;height:200px; display:block; } p{vertical-align:middle;}
+.imageThumbnailWrap
+{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.imageThumbnail
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.imageThumbnail img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*width:inherit;
+    height: inherit;*/
+}
+/*.vCenter {
+    display: table-cell !important;
+    vertical-align: middle;
+    float: none;
+}*/
+
+
+.box1
+{
+  
+      background:rgba(6, 187, 154, 1);
+      height:200px;
+}
+.box2
+{
+    background:rgba(232, 184, 27, 1);
+    //height:500px;
+}
+
+
+/* TEXT STYLING_____________________________________________*/
+h1
+{
+    font-family: "Dosis", sans-serif;
+    font-weight:400;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+
+    text-align:center;
+    color:rgba(255,255,255,0.8);
+    background:rgba(129, 43, 225, 1);
+
+    padding:7px 0;
+    margin:0 auto;
+
+    /*border-left:solid rgba(0,0,0,0.3);
+    border-bottom:solid rgba(0,0,0,0.3);
+    border-right:solid rgba(0,0,0,0.0);*/
+
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+
+    //box-shadow: inset 2px -2px 3px rgba(0,0,0,0.5); 
+
+  
+    //width:80%;
+}
+/*h1 div
+{
+    width:20px;
+    height:100%;
+    display:block;
+    position: relative;
+    left:0;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.5), rgba(0,0,0,0.0));
+    background: -o-linear-gradient(right, rgba(0,0,0,0.5), rgba(0,0,0,0.0)); 
+    background: -moz-linear-gradient(right, rgba(0,0,0,0.5), rgba(0,0,0,0.0)); 
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.0)); 
+
+}
+*/
+
+
+
+a{width:200px;height:200px; display:block; } p{vertical-align:middle;}
 
